@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="poo.AppTest" time="0.048" tests="1" errors="0" skipped="0" failures="0">
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="poo.AppTest" time="0.025" tests="1" errors="0" skipped="0" failures="0">
   <properties>
     <property name="java.specification.version" value="17"/>
     <property name="sun.cpu.isalist" value="amd64"/>
@@ -15,7 +15,7 @@
     <property name="sun.java.launcher" value="SUN_STANDARD"/>
     <property name="user.country" value="US"/>
     <property name="sun.boot.library.path" value="D:\JAVA\bin"/>
-    <property name="sun.java.command" value="C:\Users\Douglas\AppData\Local\Temp\surefire12215442447071670956\surefirebooter-20240419215149642_3.jar C:\Users\Douglas\AppData\Local\Temp\surefire12215442447071670956 2024-04-19T21-51-49_114-jvmRun1 surefire-20240419215149642_1tmp surefire_0-20240419215149642_2tmp"/>
+    <property name="sun.java.command" value="C:\Users\Douglas\AppData\Local\Temp\surefire3862564813698151671\surefirebooter-20240420125856522_3.jar C:\Users\Douglas\AppData\Local\Temp\surefire3862564813698151671 2024-04-20T12-58-55_020-jvmRun1 surefire-20240420125856522_1tmp surefire_0-20240420125856522_2tmp"/>
     <property name="jdk.debug" value="release"/>
     <property name="surefire.test.class.path" value="C:\Users\Douglas\Desktop\DouglasADM\Inatel\Atividades Inatel - 5 Semestre\SnakeGamePOO\target\test-classes;C:\Users\Douglas\Desktop\DouglasADM\Inatel\Atividades Inatel - 5 Semestre\SnakeGamePOO\target\classes;C:\Users\Douglas\.m2\repository\junit\junit\3.8.1\junit-3.8.1.jar;C:\Users\Douglas\.m2\repository\org\openjfx\javafx-controls\17\javafx-controls-17.jar;C:\Users\Douglas\.m2\repository\org\openjfx\javafx-controls\17\javafx-controls-17-win.jar;C:\Users\Douglas\.m2\repository\org\openjfx\javafx-graphics\17\javafx-graphics-17.jar;C:\Users\Douglas\.m2\repository\org\openjfx\javafx-graphics\17\javafx-graphics-17-win.jar;C:\Users\Douglas\.m2\repository\org\openjfx\javafx-base\17\javafx-base-17.jar;C:\Users\Douglas\.m2\repository\org\openjfx\javafx-base\17\javafx-base-17-win.jar;C:\Users\Douglas\.m2\repository\org\openjfx\javafx-fxml\17\javafx-fxml-17.jar;C:\Users\Douglas\.m2\repository\org\openjfx\javafx-fxml\17\javafx-fxml-17-win.jar;"/>
     <property name="sun.cpu.endian" value="little"/>
@@ -30,7 +30,7 @@
     <property name="line.separator" value="&#10;"/>
     <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
     <property name="java.specification.name" value="Java Platform API Specification"/>
-    <property name="surefire.real.class.path" value="C:\Users\Douglas\AppData\Local\Temp\surefire12215442447071670956\surefirebooter-20240419215149642_3.jar"/>
+    <property name="surefire.real.class.path" value="C:\Users\Douglas\AppData\Local\Temp\surefire3862564813698151671\surefirebooter-20240420125856522_3.jar"/>
     <property name="user.script" value=""/>
     <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
     <property name="java.runtime.version" value="17+35-LTS-2724"/>
@@ -49,12 +49,12 @@
     <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
     <property name="sun.os.patch.level" value=""/>
     <property name="native.encoding" value="Cp1252"/>
-    <property name="java.library.path" value="D:\JAVA\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:\Program Files\Common Files\Oracle\Java\javapath;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\Program Files (x86)\Falcon\MinGW\bin;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files\NVIDIA Corporation\NVIDIA NvDLISR;C:\Program Files\dotnet\;C:\Program Files\Git\cmd;C:\Program Files\Docker\Docker\resources\bin;D:\JAVA\bin;D:\Maven\apache-maven-3.9.5\bin;C:\Program Files\nodejs\;C:\Ngrok;C:\Users\Douglas\AppData\Local\Programs\Python\Python311\Scripts\;C:\Users\Douglas\AppData\Local\Programs\Python\Python311\;C:\Users\Douglas\AppData\Local\Programs\Python\Python310\Scripts\;C:\Users\Douglas\AppData\Local\Programs\Python\Python310\;C:\Program Files\MySQL\MySQL Shell 8.0\bin\;C:\Users\Douglas\AppData\Local\Microsoft\WindowsApps;C:\Users\Douglas\AppData\Local\GitHubDesktop\bin;C:\Users\Douglas\Desktop\VsCode\Microsoft VS Code\bin;C:\Users\Douglas\Desktop\Flutter\flutter\bin;C:\Users\Douglas\.dotnet\tools;C:\ProgramData\Microsoft\Windows\Start Menu\Programs\Node.js;C:\Program Files\PostgreSQL\15\bin;C:\Users\Douglas\AppData\Roaming\npm;C:\Program Files\heroku\bin;;."/>
+    <property name="java.library.path" value="D:\JAVA\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:\Program Files\Common Files\Oracle\Java\javapath;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\Program Files (x86)\Falcon\MinGW\bin;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files\NVIDIA Corporation\NVIDIA NvDLISR;C:\Program Files\dotnet\;C:\Program Files\Git\cmd;C:\Program Files\Docker\Docker\resources\bin;D:\JAVA\bin;D:\Maven\apache-maven-3.9.5\bin;C:\Program Files\nodejs\;C:\Ngrok;C:\Users\Douglas\AppData\Local\Programs\Python\Python311\Scripts\;C:\Users\Douglas\AppData\Local\Programs\Python\Python311\;C:\Users\Douglas\AppData\Local\Programs\Python\Python310\Scripts\;C:\Users\Douglas\AppData\Local\Programs\Python\Python310\;C:\Program Files\MySQL\MySQL Shell 8.0\bin\;C:\Users\Douglas\AppData\Local\Microsoft\WindowsApps;C:\Users\Douglas\AppData\Local\GitHubDesktop\bin;C:\Users\Douglas\Desktop\VsCode\Microsoft VS Code\bin;C:\Users\Douglas\Desktop\Flutter\flutter\bin;C:\Users\Douglas\.dotnet\tools;C:\ProgramData\Microsoft\Windows\Start Menu\Programs\Node.js;C:\Program Files\PostgreSQL\15\bin;C:\Users\Douglas\AppData\Roaming\npm;C:\Program Files\heroku\bin;D:\JAVA\bin;D:\Maven\apache-maven-3.9.5\bin;;."/>
     <property name="java.vm.info" value="mixed mode, sharing"/>
     <property name="java.vendor" value="Oracle Corporation"/>
     <property name="java.vm.version" value="17+35-LTS-2724"/>
     <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
     <property name="java.class.version" value="61.0"/>
   </properties>
-  <testcase name="testApp" classname="poo.AppTest" time="0.005"/>
+  <testcase name="testApp" classname="poo.AppTest" time="0.002"/>
 </testsuite>
