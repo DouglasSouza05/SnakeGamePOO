@@ -34,8 +34,12 @@ public class Snake {
 
     // Construindo a snake
     private void buildingSnake() {
-        this.head = CanvasUtilsSquares.buildingSquare(Color.GREEN);
-        this.setHeadOnCenter();
+        this.head = CanvasUtilsSquares.buildingSquare(Color.TRANSPARENT); // Cria um canvas transparente
+        GraphicsContext gc = this.head.getGraphicsContext2D(); // Obtém o contexto gráfico 2D
+        gc.setFill(Color.GREEN); // Define a cor de preenchimento como verde
+        double radius = Config.squareSize / 2; // Calcula o raio do círculo
+        gc.fillOval(0, 0, radius * 2, radius * 2); // Desenha um círculo na posição (0, 0) com o raio calculado
+        this.setHeadOnCenter(); // Define a posição da cabeça no centro
     }
 
     // Retorna o Canvas de head
@@ -104,18 +108,17 @@ public class Snake {
 
     public void changeSnakeColor(Paint color) {
         GraphicsContext gc = getHead().getGraphicsContext2D();
-        gc.clearRect(0, 0, Config.squareSize, Config.squareSize); // Limpando o Canvas (sem square)
-        gc.setFill(color);
-
-        // Redesenhando um square com a cor Vermelha
-        gc.fillRect(0, 0, Config.squareSize, Config.squareSize);
+        gc.clearRect(0, 0, Config.squareSize, Config.squareSize); // Limpando o Canvas
+        gc.setFill(Color.BLACK); // Preenchendo o círculo com a cor preta
+        double radius = Config.squareSize / 2; // Calculando o raio do círculo
+        gc.fillOval(0, 0, radius * 2, radius * 2); // Desenhando um círculo preto na posição (0, 0) com o raio calculado
     }
 
     public void eatApple(Scenario scenario) {
         // Cada parte da snake sendo um square da cor Verde
         Canvas bodyPart = CanvasUtilsSquares.buildingSquare(Color.GREEN);
         scenario.addSnakeBodyPart(bodyPart);
-        this.body.add(bodyPart); // Adiciona o bodyPart a lista (body) que terá todos as partes do corpo
+        this.body.add(bodyPart); // Adiciona o bodyPart a lista (body) que terá todos
         Config.score += 3;
     }
 
