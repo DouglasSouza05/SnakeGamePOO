@@ -109,7 +109,7 @@ public class Snake {
     public void changeSnakeColor(Paint color) {
         GraphicsContext gc = getHead().getGraphicsContext2D();
         gc.clearRect(0, 0, Config.squareSize, Config.squareSize); // Limpando o Canvas
-        gc.setFill(Color.BLACK); // Preenchendo o círculo com a cor preta
+        gc.setFill(color); // Preenchendo o círculo com a cor preta
         double radius = Config.squareSize / 2; // Calculando o raio do círculo
         gc.fillOval(0, 0, radius * 2, radius * 2); // Desenhando um círculo preto na posição (0, 0) com o raio calculado
     }
