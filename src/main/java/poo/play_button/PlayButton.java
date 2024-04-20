@@ -16,12 +16,13 @@ public class PlayButton extends VBox {
         // Título do jogo
         Text title = new Text("Snake Game");
         title.setFont(Font.font(60));
-        title.setTranslateY(-150); // Move o título para cima
+        title.setTranslateY(-80); // Move o título para cima
         title.setStyle("-fx-font-weight: bold;"); // Definindo o estilo Negrito
 
         Button play = new Button("Iniciar Tentativa");
         play.setFont(Font.font(40));
         play.setOnAction(playAction);
+        play.setTranslateY(40);
 
         Text welcome = new Text(
                 "Seja Bem-Vindo(a) ao Jogo!");
@@ -31,8 +32,8 @@ public class PlayButton extends VBox {
                 "Observações: \nMaças Valem 3 Pontos e Abacaxis Valem 1 Ponto!");
         description.setFont(Font.font(30));
 
-        welcome.setTranslateY(-60);
-        description.setTranslateY(-60);
+        welcome.setTranslateY(-20);
+        description.setTranslateY(-20);
 
         // Setando o tamanho do VBox igual ao tamanha da Scene. Auxilia na hora de
         // centralizar o Label
