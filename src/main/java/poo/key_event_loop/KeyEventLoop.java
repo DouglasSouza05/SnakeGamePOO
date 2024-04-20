@@ -38,22 +38,22 @@ public class KeyEventLoop {
             // contrária a que estava indo. Evita Bugs
 
             // Direita
-            if (key.equals(KeyCode.RIGHT) && !KeyCode.LEFT.equals(currentDirection)) {
+            if (key.equals(KeyCode.RIGHT) || key.equals(KeyCode.D) && !KeyCode.LEFT.equals(currentDirection)) {
                 currentDirection = key;
             }
 
             // Esquerda
-            if (key.equals(KeyCode.LEFT) && !KeyCode.RIGHT.equals(currentDirection)) {
+            if (key.equals(KeyCode.LEFT) || key.equals(KeyCode.A) && !KeyCode.RIGHT.equals(currentDirection)) {
                 currentDirection = key;
             }
 
             // Cima
-            if (key.equals(KeyCode.UP) && !KeyCode.DOWN.equals(currentDirection)) {
+            if (key.equals(KeyCode.UP) || key.equals(KeyCode.W) && !KeyCode.DOWN.equals(currentDirection)) {
                 currentDirection = key;
             }
 
             // Baixo
-            if (key.equals(KeyCode.DOWN) && !KeyCode.UP.equals(currentDirection)) {
+            if (key.equals(KeyCode.DOWN) || key.equals(KeyCode.S) && !KeyCode.UP.equals(currentDirection)) {
                 currentDirection = key;
             }
 
@@ -71,21 +71,21 @@ public class KeyEventLoop {
             Integer posicionY = snake.getPosicionY();
 
             // Caso seja igual andar para a Direita
-            if (KeyCode.RIGHT.equals(currentDirection)) {
+            if (KeyCode.RIGHT.equals(currentDirection) || KeyCode.D.equals(currentDirection)) {
                 posicionX += Config.squareSize; // Anda para a direita uma posição equivalente ao Square
             }
 
-            if (KeyCode.LEFT.equals(currentDirection)) {
+            if (KeyCode.LEFT.equals(currentDirection) || KeyCode.A.equals(currentDirection)) {
                 posicionX -= Config.squareSize;
             }
 
             // No caso do eixo Y, para subir se subtrai
-            if (KeyCode.UP.equals(currentDirection)) {
+            if (KeyCode.UP.equals(currentDirection) || KeyCode.W.equals(currentDirection)) {
                 posicionY -= Config.squareSize;
             }
 
             // Para descer, soma
-            if (KeyCode.DOWN.equals(currentDirection)) {
+            if (KeyCode.DOWN.equals(currentDirection) || KeyCode.S.equals(currentDirection)) {
                 posicionY += Config.squareSize;
             }
 
