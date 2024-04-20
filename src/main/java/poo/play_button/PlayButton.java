@@ -16,8 +16,8 @@ public class PlayButton extends VBox {
         play.setFont(Font.font(60));
         play.setOnAction(playAction);
 
-        // Setando o tamanho do VBox igual ao tamanha da scene. Auxilia na hora de
-        // centralizar o label
+        // Setando o tamanho do VBox igual ao tamanha da Scene. Auxilia na hora de
+        // centralizar o Label
         this.setMinWidth(Config.width);
         this.setMinHeight(Config.height);
 
