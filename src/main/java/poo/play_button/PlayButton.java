@@ -24,7 +24,7 @@ public class PlayButton extends VBox {
         welcome.setFont(Font.font(30));
 
         Text description = new Text(
-                "Observações: \nMaças Valem 3 Pontos e Abacaxis Valem 1 Ponto!");
+                "Observações: \nMaças Valem 3 Pontos e Abacaxis Valem 1 Ponto. \nUse as Setas ou as Teclas W, A, S e D para Movimentar a Snake!");
         description.setFont(Font.font(30));
 
         welcome.setTranslateY(-20);
