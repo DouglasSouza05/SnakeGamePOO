@@ -99,7 +99,7 @@ public class Snake {
     }
 
     public void deadSnake() {
-        changeSnakeColor(Color.RED);
+        changeSnakeColor(Color.BLACK);
     }
 
     public void changeSnakeColor(Paint color) {

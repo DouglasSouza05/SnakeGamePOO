@@ -18,16 +18,19 @@ public class TryAgainButton extends VBox {
 
     public TryAgainButton(EventHandler<ActionEvent> buttonAction) {
 
-        Label scoreText = new Label("SCORE: " + Config.score);
-        scoreText.setFont(Font.font(50));
-        scoreText.setTextFill(Color.BLUE);
-
         Label gameOver = new Label("GAME OVER");
         gameOver.setFont(Font.font(100)); // Comando que seta o tamanho do label
+        gameOver.setTranslateY(-80); // Move o título para cima
         gameOver.setTextFill(Color.BLACK); // Setando a cor do label
 
-        Button tryAgainButton = new Button("Try Again");
+        Label scoreText = new Label("Pontuação: " + Config.score);
+        scoreText.setFont(Font.font(40));
+        scoreText.setTranslateY(-20);
+        // scoreText.setTextFill(Color.GREEN);
+
+        Button tryAgainButton = new Button("Nova Tentativa");
         tryAgainButton.setFont(Font.font(40));
+        tryAgainButton.setTranslateY(40); // Move o título para cima
         tryAgainButton.setOnAction(buttonAction); // Ação do Botão de Try Again ao clicar
 
         // Setando o tamanho do VBox igual ao tamanha da scene. Auxilia na hora de
@@ -36,9 +39,7 @@ public class TryAgainButton extends VBox {
         this.setMinHeight(Config.height);
 
         // Por extender VBox, o comando entende que o objeto é o próprio VBox
-        this.getChildren().add(scoreText);
-        this.getChildren().add(gameOver); // Adicionando o label Game Over ao VBox
-        this.getChildren().add(tryAgainButton);
+        this.getChildren().addAll(gameOver, scoreText, tryAgainButton);
 
         this.setAlignment(Pos.CENTER); // Alinha todos os elementos do VBox ao Centro
 

@@ -15,6 +15,8 @@ import javafx.scene.Group;
 import javafx.scene.Scene;
 import javafx.scene.paint.Color;
 import javafx.stage.Stage;
+import javafx.scene.image.Image;
+import javafx.scene.image.ImageView;
 
 public class Scenario {
 
@@ -29,7 +31,7 @@ public class Scenario {
         // Criando o scene
         this.scene = new Scene(container, Config.width, Config.height); // Group - Largura - Altura
         primaryStage.setScene(scene); // setando scene na Classe Scene
-        primaryStage.setTitle("Snake Game - Projeto POO & BD by Douglas B.");
+        primaryStage.setTitle("Snake Game - Projeto POO by Douglas Souza");
         primaryStage.show(); // Mostrando tela
 
         this.snake = snake;
@@ -53,7 +55,7 @@ public class Scenario {
         });
 
         // Adiciona o playButton a scene
-        this.container.getChildren().add(playButton);
+        this.container.getChildren().addAll(playButton);
 
     }
 
