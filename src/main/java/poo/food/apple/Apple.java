@@ -21,6 +21,7 @@ public class Apple extends Food {
     }
 
     public void setRandomPosition() {
+
         this.apple.setTranslateX(randomNumbers(0, Config.width - Config.squareSize));
         this.apple.setTranslateY(randomNumbers(0, Config.height - Config.squareSize));
     }
