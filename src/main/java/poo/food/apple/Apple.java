@@ -21,9 +21,6 @@ public class Apple extends Food {
     }
 
     public void setRandomPosition() {
-        // Setando um valor aleatório para a posição X e Y de apple
-        // Método randomNumbers sendo usado a partir de herança (Apple Classe filha de
-        // Food)
         this.apple.setTranslateX(randomNumbers(0, Config.width - Config.squareSize));
         this.apple.setTranslateY(randomNumbers(0, Config.height - Config.squareSize));
     }
@@ -32,12 +29,12 @@ public class Apple extends Food {
         return apple;
     }
 
-    // Método usado para pegar a coordenada X de apple
+    @Override
     public Integer getPosicionX() {
         return (int) this.apple.getTranslateX(); // Pega a posição X e faz o Casting de double para int
     }
 
-    // Método usado para pegar a coordenada Y de apple
+    @Override
     public Integer getPosicionY() {
         return (int) this.apple.getTranslateY();
     }

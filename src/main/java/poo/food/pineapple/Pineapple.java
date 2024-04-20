@@ -16,13 +16,12 @@ public class Pineapple extends Food {
         setRandomPosition();
     }
 
+    @Override
     protected void creatingFood() {
         this.pineapple = CanvasUtilsSquares.buildingSquare(Color.YELLOW);
     }
 
     public void setRandomPosition() {
-        // Setando um valor aleatório para a posição X e Y de apple
-        // Setando para aparecer em um quarto a mais da tela
         this.pineapple
                 .setTranslateX(randomNumbers(Config.oneQuarterWidthDown, Config.oneQuarterWidthUp - Config.squareSize));
         this.pineapple.setTranslateY(
@@ -33,12 +32,12 @@ public class Pineapple extends Food {
         return pineapple;
     }
 
-    // Método usado para pegar a coordenada X de pineapple
+    @Override
     public Integer getPosicionX() {
         return (int) this.pineapple.getTranslateX(); // Pega a posição X e faz o Casting de double para int
     }
 
-    // Método usado para pegar a coordenada Y de pineapple
+    @Override
     public Integer getPosicionY() {
         return (int) this.pineapple.getTranslateY();
     }
